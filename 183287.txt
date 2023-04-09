@@ -1,0 +1,23 @@
+Креирање репозиториум со клик на делот "Create repository" во GitHub.
+Креираме директориум со командата mkdir SI_2023_lab1_183287, па потоа
+го иницијализираме со командата git init - фолдерот е креиран во C  во user SI_2023_lab1_183287.git 
+Поврзување со git remote add origin https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+Додаваме README.md датотека со командата notepadd README.md потоа имаме git add README.md, па потоа 
+git commit -m 'Initial commit'.
+notepad SILab1.java, ја внесуваме содржината па потоа адд SILab1.java, па комит со 
+git commit -m'Add Java class'.
+Синхронизирано со оддалечениот репозиториум.
+Команда за отворање гранки git checkout -b bug1 па 2 па 3
+Префрлање на гранка со команда git checkout bug1
+Поправка на грешка и git commit -m 'Fix wrong for reading'
+Префрлање на гранка со команда git checkout bug2
+Поправка на грешка и git commit -m 'Fix wrong condition in filterOddNumbers'
+Префрлање на гранка со команда git checkout bug3
+Поправка на грешка и git commit -m 'Fix method sumEvenNumbers'
+Префрлување на гранката master git checkout master
+Спојување на гранките bug1 bug2 i bug3 со команда git merge 
+Правиме потоа get push 
+Потоа git rebase master
+
+
+

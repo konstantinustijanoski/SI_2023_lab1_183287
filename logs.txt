@@ -1,0 +1,237 @@
+
+kokim@DESKTOP-97CA3VO MINGW64 ~
+$ mkdir SI_2023_lab1_183287
+
+kokim@DESKTOP-97CA3VO MINGW64 ~
+$ cd SI_2023_lab1_183287
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287
+$ git remote add origin https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+fatal: not a git repository (or any of the parent directories): .git
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287
+$ git branch -M master
+fatal: not a git repository (or any of the parent directories): .git
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287
+$ git init
+Initialized empty Git repository in C:/Users/kokim/SI_2023_lab1_183287/.git/
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git remote add origin https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ notepad README.md
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git add README.md
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git commit -m 'Initial commit'
+[master (root-commit) ac0ca60] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 254 bytes | 254.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ notepad SILab1.java
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git add SILab1.java
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git commit -m 'Add java class'
+[master 5ae381a] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 635 bytes | 635.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+   ac0ca60..5ae381a  master -> master
+branch 'master' set up to track 'origin/master'.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git checkout -b bug1
+Switched to a new branch 'bug1'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git checkout -b bug2
+Switched to a new branch 'bug2'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug2)
+$ git checkout -b bug3
+Switched to a new branch 'bug3'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git commit -m 'Fix wong loop for reading'
+On branch bug1
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug2)
+$ git commit -m 'а Fix wrong condition in filterOddNumbers'
+On branch bug2
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+kokim@DESKTOP-97CA3VO MINGW64 ~
+$ cd SI_2023_lab1_183287
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git commit -m 'Fix method sumEvenNumbers'
+On branch bug3
+nothing to commit, working tree clean
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git push
+fatal: The current branch bug3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git push https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/konstantinustijanoski/SI_2023_lab1_183287/pull/new/bug3
+remote:
+To https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+ * [new branch]      bug3 -> bug3
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug3)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug2)
+$ git push https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/konstantinustijanoski/SI_2023_lab1_183287/pull/new/bug2
+remote:
+To https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+ * [new branch]      bug2 -> bug2
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git push https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/konstantinustijanoski/SI_2023_lab1_183287/pull/new/bug1
+remote:
+To https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+ * [new branch]      bug1 -> bug1
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git branch -r
+  origin/master
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (bug1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git branch -r
+  origin/master
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ ls
+README.md  SILab1.java
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git merge bug1
+Already up to date.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ ^C
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ ^C
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git push https://github.com/konstantinustijanoski/SI_2023_lab1_183287.git
+Everything up-to-date
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git rebase master
+Current branch master is up to date.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ git merge bug3
+Already up to date.
+
+kokim@DESKTOP-97CA3VO MINGW64 ~/SI_2023_lab1_183287 (master)
+$ notepad logs.txt
+
+
+
+
